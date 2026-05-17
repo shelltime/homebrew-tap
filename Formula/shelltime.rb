@@ -5,13 +5,13 @@
 class Shelltime < Formula
   desc "Track and analyze your shell usage - ShellTime CLI"
   homepage "https://shelltime.xyz"
-  version "0.1.82"
+  version "0.1.83"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shelltime/cli/releases/download/v0.1.82/cli_Darwin_x86_64.zip"
-      sha256 "c676de40844b05a4adcd5634d45d738f29bc95195b9bd38d13eee3e96eabf751"
+      url "https://github.com/shelltime/cli/releases/download/v0.1.83/cli_Darwin_x86_64.zip"
+      sha256 "38c99579f001a733fa96173108163d43a914b43f2743cecd993005b38f26057a"
 
       define_method(:install) do
         bin.install "shelltime"
@@ -19,8 +19,8 @@ class Shelltime < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shelltime/cli/releases/download/v0.1.82/cli_Darwin_arm64.zip"
-      sha256 "264847531b30848952a31a07aab498f2feccc67940694ba97a4300763d857d8f"
+      url "https://github.com/shelltime/cli/releases/download/v0.1.83/cli_Darwin_arm64.zip"
+      sha256 "9ac0d36009bd21519499c4ee8f26a69e305e507190b9757ac3018c31bb7a3514"
 
       define_method(:install) do
         bin.install "shelltime"
@@ -31,16 +31,16 @@ class Shelltime < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shelltime/cli/releases/download/v0.1.82/cli_Linux_x86_64.tar.gz"
-      sha256 "6389f4e5da7be4423cdd062fc38cd6e0ec7a0eca838af59d5090ef6bdb5a0eaf"
+      url "https://github.com/shelltime/cli/releases/download/v0.1.83/cli_Linux_x86_64.tar.gz"
+      sha256 "a2c1583cd0ef0e41bb124b1e1930843fbb75f4453b9d0666e5fb749447976c3a"
       define_method(:install) do
         bin.install "shelltime"
         bin.install "shelltime-daemon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shelltime/cli/releases/download/v0.1.82/cli_Linux_arm64.tar.gz"
-      sha256 "e580f7746bdb54723b66192a1c8d367a49e3fc49492b3117e49aee9b2a5ed89a"
+      url "https://github.com/shelltime/cli/releases/download/v0.1.83/cli_Linux_arm64.tar.gz"
+      sha256 "b3ab4548a59bb0b72824ce17ee6960523ca8ef73ce65e7474bcf0c160b3d6bbb"
       define_method(:install) do
         bin.install "shelltime"
         bin.install "shelltime-daemon"
