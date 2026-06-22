@@ -4,6 +4,12 @@ Official [Homebrew](https://brew.sh) tap for [ShellTime](https://shelltime.xyz) 
 
 ## Installation
 
+> [!NOTE]
+> The Homebrew tap is distributed as a **macOS-only Cask**. On Linux, install with:
+> ```bash
+> curl -sSL https://shelltime.xyz/i | bash
+> ```
+
 ```bash
 brew tap shelltime/tap
 brew install shelltime
